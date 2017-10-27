@@ -46,7 +46,7 @@ public class MapContentsHandler implements SheetContentsHandler {
         } else if (pStrings.length == 3) {
             index = ((pStrings[0] - 'A') * 676) + ((pStrings[1] - 'A') * 26) + pStrings[2] - 'A';
         } else {
-            throw new IllegalArgumentException("不支持");
+            throw new IllegalArgumentException("not support convert to number");
         }
 
         return index;
