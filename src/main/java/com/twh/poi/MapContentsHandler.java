@@ -13,7 +13,7 @@ public class MapContentsHandler implements SheetContentsHandler {
     private Map<String, String> lineMap;
     private final List<String> fields = new ArrayList<>(16);
     // 单元格列转数值映射MAP
-    private static final HashMap<String, Integer> columnIndexCache = new LinkedHashMap<>();
+    private static final HashMap<String, Integer> columnIndexCache = new HashMap<>();
     // 当前行
     private int currentLine;
     // 当前列
